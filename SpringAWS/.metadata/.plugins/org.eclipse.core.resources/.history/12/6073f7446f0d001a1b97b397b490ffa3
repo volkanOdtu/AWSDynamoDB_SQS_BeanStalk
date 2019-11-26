@@ -1,0 +1,14 @@
+server: 
+  port: 9001
+  
+cloud:
+  aws:
+    region : 
+      static: eu-west-2
+      auto : false
+    credentials:
+      access-key : AKIA2X4Z52ALBUH3D3HD
+      secret-key : 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          
+    end-point: 
+      uri : https://sqs.eu-west-2.amazonaws.com/738520322070/spring-boot-sqs
+    

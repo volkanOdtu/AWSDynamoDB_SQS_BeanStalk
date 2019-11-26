@@ -1,0 +1,10 @@
+amazon:
+  access:
+    key : AKIA2X4Z52ALBUH3D3HD
+    secret-key : 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
+  region: eu-west-2
+  end-point:
+    url : dynamodb.eu-west-2.amazonaws.com
+ 
+server:
+  port: 9001

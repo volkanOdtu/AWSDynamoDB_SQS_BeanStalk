@@ -1,0 +1,5 @@
+package com.techprimers.awsbeanstalk;
+
+public class HelloController {
+
+}

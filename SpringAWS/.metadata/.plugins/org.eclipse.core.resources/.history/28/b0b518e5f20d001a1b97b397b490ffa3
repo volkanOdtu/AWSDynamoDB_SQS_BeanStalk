@@ -1,0 +1,15 @@
+
+cloud:
+  aws:
+    region : 
+      static: eu-west-2
+      auto : false
+    credentials:
+      access-key : AKIA2X4Z52ALHJJANVUP
+      secret-key : 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          
+    end-point: 
+      uri : https://sqs.eu-west-2.amazonaws.com/738520322070/SasquatchImageQueue	
+    
+server: 
+  port: 9001
+  

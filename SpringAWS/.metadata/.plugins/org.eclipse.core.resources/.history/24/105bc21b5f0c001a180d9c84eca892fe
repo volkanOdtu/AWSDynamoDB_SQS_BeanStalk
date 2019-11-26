@@ -1,0 +1,25 @@
+package com.springboot.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+
+@Configuration
+public class DynamoDbConfig {
+
+	@Value("${amazon.access.key}")
+	private String awsAccessKey;
+	
+	@Value("${amazon.access.secret-key}")
+	private String awsSecretKey;
+	
+	@Value("${amazon.region}")
+	private String awsRegion;
+	
+	@Value("${amazon.end-point.url}")
+	private String awsDynamoDBEndpoint;
+	
+	public DynamoDBMapper mapper()
+	{}
+}

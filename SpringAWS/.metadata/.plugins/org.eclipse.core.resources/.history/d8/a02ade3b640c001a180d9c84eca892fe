@@ -1,0 +1,22 @@
+package com.springboot.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springboot.model.Student;
+import com.springboot.repository.DynamoDBRepository;
+
+@RestController
+@RequestMapping("/dynamoDb")
+public class DynamoDBController {
+	@Autowired
+	private DynamoDBRepository repository;
+	
+	public String insertIntoDynamoDB(@RequestBody Student student)
+	{
+		//repository.insertIntoDynamoDB(student);
+		return "Successfully inserted into DynamoDB table";
+	}
+}
